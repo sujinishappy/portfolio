@@ -154,6 +154,7 @@
     #imgSet img {
     width: 100%;
     height: auto;
+        object-fit: cover;
 }
 #imgSet .hide{
     animation: imgMotion 1s forwards;
