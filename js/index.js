@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     html.addClass('no-scroll');
 
-    setTimeout(hideLoader, 3800);
+    setTimeout(hideLoader, 2800);
 });
 
 
