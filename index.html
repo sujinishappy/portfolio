@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namsujin's_portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./img/">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
         <link href="./css/index.css" rel="stylesheet" type="text/css">
         <link href="./css/about.css" rel="stylesheet" type="text/css">
         <link href="./css/skill.css" rel="stylesheet" type="text/css">
@@ -14,63 +14,75 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
+    <div class="loader">
+        <div class="loading">
+            <h2> loading …</h2>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="hap"></span>
+        </div>
+    </div>
     <header id="header">
-        <span class="logo"><a href="./index.html">Nam<br/>Su Jin</a></span>
+        <span class="logo first"><a href="./index.html">Nam<br/>Su Jin</a></span>
         <span class="nav-right">
             <ul>
-                <li class="first"><a href="./">About</a></li>
-                <li class="first"><a href="./">Skill</a></li>
+                <li class="first"><a href="#">About</a></li>
+                <li class="first"><a href="#">Skill</a></li>
                 <li class="first"><a href="#">Works</a></li>
             </ul>
         </span>
     </header>
     <div class="pointer"></div>
+    <button id="topButton" onclick="scrollToTop()">↑</button>
     <section id="wrap">
-        <section id="left">
+        <div id="left">
             <h1>PORTPOLIO</h1>
             <p class="content">Kaywon University of Art & Design</p>
             <p class="content1">Degital Media Design</p>
             <p class="content1">Programmer</p>
             <div class="line"></div>
             <p class="content2">Nam Su Jin</p>
-        </section>
+        </div>
         <div id="circle"></div>
-        <section id="right">
+        <div id="right">
             <img  class="hover-image" src="./img/main_img2.jpg">
-        </section>
-    </section>
-    <section id="wrap5">
-        <div id="container">
-            <h3 class="main_conent n2">안녕하세요</h3>
-            <h3 class="main_conent n">안녕하세요</h3>
-
-            <h3 class="main_conent2 m">안녕하세요</h3>
-            <h3 class="main_conent s2">안녕하세요</h3>
-            <h3 class="main_conent s">안녕하세요</h3>
-            <h3 class="main_conent2 j">안녕하세요</h3>
-            <h3 class="main_conent i3">안녕하세요</h3>
-            <h3 class="main_conent i2">안녕하세요</h3>
-            <h3 class="main_conent i">안녕하세요</h3>
-            <h3 class="main_conent2 p">안녕하세요</h3>
-            <h3 class="main_conent o2">안녕하세요</h3>
-            <h3 class="main_conent o">안녕하세요</h3>
         </div>
     </section>
+    <div id="wrap5">
+        <div id="container">
+            <h3 class="main_conent n2">정직한 코드가 좋아,</h3>
+            <h3 class="main_conent n">개발을 시작한</h3>
+            <h3 class="main_conent2 m">남수진입니다.</h3>
+            <h3 class="main_conent s2">끊임 없이 배우고 싶어 하는</h3>
+            <h3 class="main_conent s">융통성이 부족하지만 결국, 끝까지 해내는</h3>
+            <h3 class="main_conent2 j">집요함과</h3>
+            <h3 class="main_conent i3">지각과 결석을 가장 싫어하는</h3>
+            <h3 class="main_conent i2">무슨 일이 있어도 </h3>
+            <h3 class="main_conent i">시간 약속이 가장 중요한</h3>
+            <h3 class="main_conent2 p">성실함을 가진</h3>
+            <h3 class="main_conent o2">융합형 인재 ,</h3>
+            <h3 class="main_conent o">남수진입니다.</h3>
+        </div>
+    </div>
     <section id="wrap2">
-        <section id="title">
+        <div id="title">
             <h1>About</h1>
             <div class="line2"></div>
-        </section>
+        </div>
         <div id="container">
-            <section id="left">
+            <div id="left">
                 <img src="./img/about-img.jpg">
                 <!-- <p class="content">남수진</p> -->
                 <div class="line"></div>
-                <p class="content1">Nam Su Jin</p>
+                <p class="content1">南 秀 陳</p>
                 <p class="content1">2001.04.27</p>
                 <p class="content1">suzie27@naver.com</p>
-            </section>
-            <section id="right">
+            </div>
+            <div id="right">
                 <!-- <h1 class="content3">About Me</h1> -->
                 <p class="content4">안녕하세요!</p>
                 <p class="content2">남수진은 ‘배움의 목마름을 느끼고, 배우고 싶어하는 사람’ 입니다.</p>
@@ -90,19 +102,18 @@
                     프로그래밍만 배운 평면적인 사람이 아닌, 기획과 디자인까지도 유능한 융합형 인재가 되고자합니다.
                     <br/>
                     그러한 이유로 융합형 인재 양성을 도모하는 전공 심화 과정을 수료하고자 지원합니다.</p>
-
-            </section>
+            </div>
         </div>
     </section>
     
     <section id="wrap4">
-        <section id="title">
+        <div id="title">
             <h1>My Skills</h1>
             <div class="line2"></div>
-        </section>
+        </div>
         <h1 class="titled">Skill Details</h1>
         <div id="container">
-            <section id="left">
+            <div id="left">
                     <p class="content1">HTML</p>
                     <p class="content1">CSS</p>
                     <p class="content1">JavaScript/jQuery</p>
@@ -111,8 +122,8 @@
                     <p class="content1">Figma</p>
                     <p class="content1">Ps</p>
                     <p class="content1">Ai</p>
-            </section>
-            <section id="right">
+            </div>
+            <div id="right">
                     <div class="content2"><div class="content3 f"></div></div>
                     <div class="content2"><div class="content3 s0"></div></div>
                     <div class="content2"><div class="content3 t"></div></div>
@@ -121,15 +132,15 @@
                     <div class="content2"><div class="content3 t1"></div></div>
                     <div class="content2"><div class="content3 f2"></div></div>
                     <div class="content2"><div class="content3 s02"></div></div>
-            </section>
+            </div>
         </div>
     </section>
     <section id="wrap3">
-        <section id="title">
+        <div id="title">
             <h1>My Works</h1>
             <div class="line2"></div>
-        </section>
-        <section id="forth">
+        </div>
+        <div id="forth">
             <div id="last">
                 <div class="la_content md">
                     <p class="lsp">UI/UX DESIGN</p>
@@ -144,95 +155,75 @@
                     <p class="lsp">3D DESIGN</p>
                 </div>
                 <div class="la_content md">
-                    <p class="lsp">AND PLANNING</p> 
+                    <p  id="mo1" class="lsp">AND PLANNING</p> 
                 </div>
-                <!-- <div class="la_content rgt">
-                    <p class="lsp">An unforgettable moment</p>
-                </div> -->
             </div>
-        </section>
+        </div>
         <div id="container">
-            <section id="left">
+            <div id="left" class="left1">
                 <p class="content1">3ds Max</p>
-                <p class="content"><a href="./work-01.html"> 지진이 일어났어요</a></p>
+                <p class="content"> 지진이 일어났어요</p>
                 <!-- <p class="content1">설명 내용</p>
                 <p class="content1">설명 내용</p>
                 <p class="content1">설명 내용</p> -->
                 <p class="content2">2022 . 10 ~ 2022 . 12</p>
-                <p class="content3"><a href="./work-01.html">View more</a></p>
-            </section>
-            <section id="right">
+                <p class="content3"><a id="mo2" href="./work-01.html">View more</a></p>
+            </div>
+            <div id="right">
                 <a href="./work-01.html"><img src="./img/01_img.jpg" alt="01 img"></a>
-            </section>
+            </div>
         </div>
         <div id="container">
-            <section id="right2">
+            <div id="right2">
                 <a href="./work-02.html"><img src="./img/02_img.jpg" alt="02 img"></a>
-            </section>
-            <section id="left2">
+            </div>
+            <div id="left2" class="left2">
                 <p class="content1">Web Publishing</p>
                 <p class="content">Andy Warhol</a></p>
-                <!-- <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p> -->
                 <p class="content2">2023 . 3 ~ 2023 . 6</p>
-                <p class="content3"><a href="./work-02.html">View more</a></p>
-            </section>
+                <p class="content3"><a id="mo3" href="./work-02.html">View more</a></p>
+            </div>
         </div>
         <div id="container">
-            <section id="left">
+            <div id="left" class="left3">
                 <p class="content1">UI/UX Design</p>
                 <p class="content"><a href="./work-03.html">RE-BORN service</a></p>
-                <!-- <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p> -->
                 <p class="content2">2023 . 3 ~ 2023 . 6</p>
-                <p class="content3"><a href="./work-03.html">View more</a></p>
-            </section>
-            <section id="right">
+                <p class="content3"><a id="mo4" href="./work-03.html">View more</a></p>
+            </div>
+            <div id="right">
                 <a href="./work-03.html"><img src="./img/03_img.jpg" alt="03 img"></a>
-            </section>
+            </div>
         </div>
         <div id="container">
-            <section id="right2">
+            <div id="right2">
                 <a href="./work-04.html"><img src="./img/04_img.jpg" alt="04 img"></a>
-            </section>
-            <section id="left2">
+            </div>
+            <div id="left2" class="left4">
                 <p class="content1">Interactive Web</p>
-                <p class="content"><a href="./work-04.html"> Seoul Jazz Festival</a></p>
-                <!-- <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p> -->
+                <p class="content"> Seoul Jazz Festival</p>
                 <p class="content2">2023 . 11 ~ 2023 . 12</p>
-                <p class="content3"><a href="./work-04.html">View more</a></p>
-            </section>
+                <p class="content3"><a id="mo5" href="./work-04.html">View more</a></p>
+            </div>
         </div>
         <div id="container">
-            <section id="left">
+            <div id="left" class="left5">
                 <p class="content1">UI/UX Design</p>
-                <p class="content"><a href="./work-05.html">Me:O service</a></p>
-                <!-- <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p> -->
+                <p class="content">Me:O service</p>
                 <p class="content2">2023 . 09 ~ 2023 . 11</p>
                 <p class="content3"><a href="./work-05.html">View more</a></p>
-            </section>
-            <section id="right">
+            </div>
+            <div id="right">
                 <a href="./work-05.html"><img src="./img/05_img.jpg" alt="05 img"></a>
-            </section>
+            </div>
         </div>
-        <!-- <div id="container">
-            <section id="right2">
-                <a href="./work-06.html"><img src="./img/work06.jpg"></a>
-            </section>
-            <section id="left2">
-                <p class="content"><a href="./work-06.html">06. Diptyque</a></p>
-                <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p>
-                <p class="content1">설명 내용</p>
-                <p class="content2">2022 . 10 ~ 2022 . 12</p>
-            </section>
-        </div> -->
     </section>
+    <footer>
+        <div>
+        <a href="./img/디지텉미디어디자인학과_남수진.hwp" download>Download Statement of Purpose</a>
+        <p>Nam Su Jin</p>
+    </div>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
 </html>
