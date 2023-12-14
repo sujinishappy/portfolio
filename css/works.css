@@ -154,14 +154,15 @@
     #imgSet img {
     width: 100%;
     height: auto;
-        object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
 }
 #imgSet .hide{
     animation: imgMotion 1s forwards;
 }
 @keyframes imgMotion {
     from{width: 75vw; height: 41vw;} 
-    to{width: 0; height: 41vw;}
+    to{width: 75vw; height: 0;}
 }
 #right{
     width: 38vw;
