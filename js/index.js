@@ -7,12 +7,12 @@ $(document).ready(function () {
         html.removeClass('no-scroll');
     }
 
-    // Check if it's a page reload
+    // Check if it's a page reload or initial load
     if (performance.navigation.type === 1) {
-        // Page is loaded for the first time
+        // Page is loaded or reloaded
         html.addClass('no-scroll');
         setTimeout(hideLoader, 3800);
-    } else {
+    }else {
         // Page is reloaded
         hideLoader();
     }
