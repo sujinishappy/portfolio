@@ -7,11 +7,16 @@ $(document).ready(function () {
         html.removeClass('no-scroll');
     }
 
-    html.addClass('no-scroll');
-
-    setTimeout(hideLoader, 2800);
+    // Check if it's a page reload
+    if (performance.navigation.type === 1) {
+        // Page is loaded for the first time
+        html.addClass('no-scroll');
+        setTimeout(hideLoader, 3800);
+    } else {
+        // Page is reloaded
+        hideLoader();
+    }
 });
-
 
 const $cursor = document.querySelector('.pointer');
 document.addEventListener('mousemove', function (e) {
