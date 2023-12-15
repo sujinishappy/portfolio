@@ -305,7 +305,7 @@ header ul {
 .loading span:nth-of-type(7) {
     background: #3d3634bd;
     animation-delay: 1.2s;
-    animation: loadings 1s ease forwards;
+    animation: loadings 2s ease forwards;
 }
 
 /*
