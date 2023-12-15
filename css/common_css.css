@@ -285,7 +285,7 @@ header ul {
         background: #3d3634bd;
     scale: 1;
     }
-    70%{
+    20%{
         background: #3d3634bd;
         scale: 1;
     }
@@ -305,7 +305,7 @@ header ul {
 .loading span:nth-of-type(7) {
     background: #3d3634bd;
     animation-delay: 1.2s;
-    animation: loadings 2.5s ease forwards;
+    animation: loadings 1s ease forwards;
 }
 
 /*
