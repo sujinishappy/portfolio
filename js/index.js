@@ -7,15 +7,9 @@ $(document).ready(function () {
         html.removeClass('no-scroll');
     }
 
-    // Check if it's a page reload or initial load
-    if (performance.navigation.type === 1) {
-        // Page is loaded or reloaded
-        html.addClass('no-scroll');
-        setTimeout(hideLoader, 3800);
-    }else {
-        // Page is reloaded
-        hideLoader();
-    }
+    html.addClass('no-scroll');
+
+    setTimeout(hideLoader, 1000);
 });
 
 const $cursor = document.querySelector('.pointer');
