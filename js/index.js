@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     html.addClass('no-scroll');
 
-    setTimeout(hideLoader, 1000);
+    setTimeout(hideLoader, 2000);
 });
 
 const $cursor = document.querySelector('.pointer');
