@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
     const loader = $('.loader');
     const html = $('html');
 
@@ -10,7 +10,7 @@ $(document).ready(function () {
     html.addClass('no-scroll');
 
     setTimeout(hideLoader, 2000);
-});
+});*/
 
 const $cursor = document.querySelector('.pointer');
 document.addEventListener('mousemove', function (e) {
